@@ -1,0 +1,18 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "env-cmd ./.env nodemon -e js,graphql server/index.js",
+    "deploy": "cd prisma && prisma deploy"
+  },
+  "dependencies": {
+    "apollo-server": "^2.4.8",
+    "prisma-binding": "^2.3.5"
+  },
+  "devDependencies": {
+    "env-cmd": "^8.0.2",
+    "nodemon": "^1.18.10"
+  }
+}
