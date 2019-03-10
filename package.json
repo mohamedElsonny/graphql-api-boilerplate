@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "apollo-server": "^2.4.8",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^8.5.0",
     "prisma-binding": "^2.3.5"
   },
   "devDependencies": {

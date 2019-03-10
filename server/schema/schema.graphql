@@ -6,4 +6,15 @@ type Query {
 
 type Mutation {
   createUser(name: String!, email: String!, password: String): User
+  signup(data: SignupInput!): Token
+}
+
+type Token {
+  token: String!
+}
+
+input SignupInput {
+  name: String!
+  email: String!
+  password: String!
 }
